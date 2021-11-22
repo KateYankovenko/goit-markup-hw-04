@@ -423,7 +423,7 @@ img {
   padding-top: 0px;
   margin-bottom: 0px;
 }
-.client-content {
+.client-link {
   display: block;
   align-items: center;
 }
@@ -433,23 +433,19 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
+  color: var(--svg-fill-color);
   border: 1px solid var(--svg-fill-color);
   border-radius: 4px;
   padding: 0px;
   margin: 0px;
 }
-.button-icon {
-  display: block;
-  fill: var(--svg-fill-color);
-}
 .client-button:hover,
 .client-button:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
-  cursor: pointer;
 }
-.button-icon:hover,
-.button-icon:focus {
-  fill: var(--accent-color);
+.button-icon {
+  fill: currentColor;
 }
 /*footer*/
 .footer {
