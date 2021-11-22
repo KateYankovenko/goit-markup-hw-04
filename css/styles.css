@@ -127,9 +127,7 @@ img {
 .contact-item:not(:first-child) {
   margin-left: 30px;
 }
-/* .contact .contact-item + .contact-item {
-  margin-left: 50px;
-} */
+
 .header-icon {
   display: inline-block;
   margin-right: 10px;
@@ -139,10 +137,6 @@ img {
 .contact-header:focus {
   color: var(--accent-color);
 }
-/* .header-icon:hover,
-.header-icon:focus {
-  fill: var(--accent-color);
-} */
 
 /* footer contacts */
 .contact-footer,
@@ -153,9 +147,6 @@ img {
   font-style: normal;
   text-decoration: none;
 }
-/* actions with contacts */
-/* .contact-header:hover,
-.contact-header:focus, */
 .contact-footer:hover,
 .contact-footer:focus {
   /* color: var(--accent-color); */
@@ -251,18 +242,6 @@ img {
   background: var(--first-section-color);
 }
 .hero {
-  /* background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto; */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -416,8 +395,6 @@ img {
 .social {
   display: flex;
   justify-content: space-between;
-  /* padding: 0;
-  margin: 0px; */
 }
 .social-page-link {
   display: flex;
@@ -444,7 +421,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .client-content {
   display: block;
@@ -458,18 +435,13 @@ img {
   height: 92px;
   border: 1px solid var(--svg-fill-color);
   border-radius: 4px;
-  /* color: var(--main-text-color) */
-  /* color: var(--svg-fill-color); */
   padding: 0px;
-  margin: 0;
+  margin: 0px;
 }
 .button-icon {
   display: block;
   fill: var(--svg-fill-color);
 }
-/* .sixth {
-  padding: 23px 65px 22.3px 64px;
-} */
 .client-button:hover,
 .client-button:focus {
   border-color: var(--accent-color);
@@ -478,7 +450,6 @@ img {
 .button-icon:hover,
 .button-icon:focus {
   fill: var(--accent-color);
-  /* cursor: pointer; */
 }
 /*footer*/
 .footer {
@@ -486,8 +457,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
 .logo-footer {
-  margin-top: 0px;
+  display: block;
   margin-bottom: 20px;
 }
 .footer-info {
@@ -505,7 +480,41 @@ img {
 .footer-info .contact-footer:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.footer-social-list {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: var(--first-section-color);
+  text-transform: uppercase;
+}
+.footer-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--first-section-color);
+}
+.footer-item-link:hover,
+.footer-item-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-item {
+}
 /* portfolio page */
 .portfolio {
   background-color: var(--first-section-color);
@@ -526,11 +535,18 @@ img {
   display: inline-block;
   background-color: var(--section-text-color);
 }
-/* .project:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-} */
 .project > a {
   text-decoration: none;
+}
+.working-project {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.working-project:hover,
+.working-project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .image {
   display: block;
@@ -543,8 +559,6 @@ img {
   padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 4px;
-  /* width: 322px; */
-  /* min-height: 36px; */
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -554,8 +568,6 @@ img {
 .image-depict {
   margin-top: 0px;
   margin-bottom: 0px;
-  /* width: 322px; */
-  /* min-height: 30px; */
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
